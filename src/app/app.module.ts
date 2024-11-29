@@ -34,6 +34,7 @@ import { MatListModule } from '@angular/material/list';
 import { ArticleComponent } from './article/article.component';
 import { DialogContentArticleDetailsComponent } from './dialog-content-article-details/dialog-content-article-details.component';
 import { ArticleFormComponent } from './article-form/article-form.component';
+import { AssistantFormComponent } from './assistant-form/assistant-form.component';
 
 
 
@@ -53,7 +54,8 @@ import { ArticleFormComponent } from './article-form/article-form.component';
     LoginComponent,
     ArticleComponent,
     DialogContentArticleDetailsComponent,
-    ArticleFormComponent 
+    ArticleFormComponent,
+    AssistantFormComponent 
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<div class="assistant-form">
+  <h1>AI Assistant</h1>
+  <form (ngSubmit)="onSubmit()">
+    <label for="userQuestion">Ask your question:</label>
+    <input
+      id="userQuestion"
+      type="text"
+      [(ngModel)]="userQuestion"
+      name="userQuestion"
+      required
+    />
+    <button type="submit">Send</button>
+  </form>
+
+  <div *ngIf="response">
+    <h2>Response:</h2>
+    <p>{{ response }}</p>
+  </div>
+</div>

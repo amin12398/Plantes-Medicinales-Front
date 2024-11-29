@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ArticleComponent } from './article/article.component';
 import { ArticleFormComponent } from './article-form/article-form.component';
+import { AssistantFormComponent } from './assistant-form/assistant-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/register', pathMatch: 'full' },  // Default route
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'login' , component: LoginComponent},
   {path: 'article' , component: ArticleComponent},
   {path: 'addArticle' , component:ArticleFormComponent },
+  {path: 'assistantform' , component:AssistantFormComponent},
   { path: '**', redirectTo: '/register' }
   
   
