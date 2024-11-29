@@ -18,7 +18,7 @@
 
   <!-- Afficher les commentaires -->
   <h2 mat-dialog-title>Commentaires</h2>
-  <div *ngFor="let comment of comments">
+  <div class="comment-container" *ngFor="let comment of comments">
     <p><strong>{{ comment.userFullName }}</strong>: {{ comment.content }}</p>
   </div>
 

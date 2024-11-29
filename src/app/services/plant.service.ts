@@ -81,10 +81,17 @@ export class PlantService {
   }
 
   */
+ /*
   getCommentsForPlante(planteId: number): Observable<Comment[]> {
     const headers = this.createAuthHeaders(); // Inclure le jeton JWT si nécessaire
     return this.http.get<Comment[]>(`${this.apiUrl}/plantes/${planteId}/comments`, { headers });
   }
+  */
+
+  getCommentsForPlante(planteId: number): Observable<Comment[]> {
+    return this.http.get<Comment[]>(`${this.apiUrl}/plantes/${planteId}/comments`);
+  }
+
 
 
 }
