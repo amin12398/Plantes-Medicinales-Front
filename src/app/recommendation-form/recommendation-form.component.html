@@ -1,0 +1,23 @@
+<div class="form-container">
+  <form [formGroup]="recommendationForm" (ngSubmit)="onSubmit()">
+    <!-- Besoins spécifiques -->
+    <div class="form-group">
+      <label for="properties">Besoins spécifiques</label>
+      <input id="properties" formControlName="properties" type="text" class="form-control" />
+      <div *ngIf="recommendationForm.controls['properties'].invalid && recommendationForm.controls['properties'].touched" class="error">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <!-- Antécédents médicaux -->
+    <div class="form-group">
+      <label for="medicalHistory">Antécédents médicaux</label>
+      <input id="medicalHistory" formControlName="medicalHistory" type="text" class="form-control" />
+      <div *ngIf="recommendationForm.controls['medicalHistory'].invalid && recommendationForm.controls['medicalHistory'].touched" class="error">
+        Ce champ est requis.
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="recommendationForm.invalid">Submit</button>
+  </form>
+</div>
